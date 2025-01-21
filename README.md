@@ -9,6 +9,7 @@
 └── nginx
     └── default.conf
 `
+```
 
 ## Laravel 다운로드
 
@@ -29,6 +30,7 @@ docker compose up -d
 ```
 docker compose exec php bash
 ```
+
 
 ## 컨테이너 종료
 
