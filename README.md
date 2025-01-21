@@ -8,7 +8,6 @@
 ├── docker-compose.yaml
 └── nginx
     └── default.conf
-`
 ```
 
 ## Laravel 다운로드
