@@ -18,6 +18,15 @@ composer create-project laravel/laravel laravel-nginx-docker
 cd laravel-nginx-docker
 ```
 
+## 라라벨 프로젝트 설정
+
+```
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+```
+
 ## Docker Compose 실행
 
 ```
