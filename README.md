@@ -22,6 +22,7 @@ cd laravel-nginx-docker
 
 ```
 composer install
+npm install
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
@@ -62,4 +63,11 @@ docker compose restart
 
 ```
 docker compose logs
+```
+
+## 회원 로그인 추가하기 Breeze
+```
+docker-compose exec php composer require laravel/breeze --dev
+docker-compose exec php php artisan breeze:install
+docker-compose exec php php artisan migrate
 ```
