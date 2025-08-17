@@ -1,6 +1,14 @@
 # Laravel Docker Compose
 
-라라벨 프로젝트를 위한 Docker Compose 환경 설정
+## Laravel 다운로드
+
+```
+git clone https://github.com/ssh521/laravel-nginx-docker.git
+
+cd laravel-nginx-docker
+```
+
+## 라라벨 프로젝트를 위한 Docker Compose 구성
 
 ```
 .
@@ -10,15 +18,7 @@
     └── default.conf
 ```
 
-## Laravel 다운로드
-
-```
-composer create-project laravel/laravel laravel-nginx-docker
-
-cd laravel-nginx-docker
-```
-
-## 라라벨 프로젝트 설정
+## 라라벨 프로젝트 세팅하기
 
 ```
 composer install
@@ -50,4 +50,16 @@ exit
 
 ```
 docker compose down
+```
+
+## 컨테이너 재시작
+
+```
+docker compose restart
+```
+
+## 컨테이너 로그 확인
+
+```
+docker compose logs
 ```
